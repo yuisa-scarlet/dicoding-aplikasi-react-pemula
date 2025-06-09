@@ -1,6 +1,6 @@
 import "./NoteList.css";
 import NoteItem from "./NoteItem";
-import Input from "../ui/input";
+import FormInput from "../ui/input";
 import { useState } from "react";
 
 export function NoteArchiveList({ notes, onDelete, onArchive }) {
@@ -25,7 +25,7 @@ export function NoteArchiveList({ notes, onDelete, onArchive }) {
 
   return (
     <>
-      <Input
+      <FormInput
         placeholder="Cari arsip"
         value={searchTerm}
         onChange={handleSearchChange}

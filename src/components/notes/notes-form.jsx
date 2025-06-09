@@ -1,5 +1,5 @@
 import Button from "../ui/button/Button";
-import Input from "../ui/input/Input";
+import FormInput from "../ui/input/Input";
 import Textarea from "../ui/textarea/Textarea";
 import "./NoteForm.css";
 import { useState } from "react";
@@ -33,7 +33,7 @@ export default function NoteForm({ onSubmit, onCancel }) {
     <form onSubmit={handleSubmit}>
       <div className="note-form">
         <div className="input-wrapper">
-          <Input
+          <FormInput
             title="Judul"
             placeholder="Judul catatanmu"
             value={title}

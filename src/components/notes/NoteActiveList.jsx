@@ -1,5 +1,5 @@
 import NoteItem from "./NoteItem";
-import Input from "../ui/input";
+import FormInput from "../ui/input";
 import { useState } from "react";
 
 export function NoteActiveList({ notes, onDelete, onArchive }) {
@@ -24,7 +24,7 @@ export function NoteActiveList({ notes, onDelete, onArchive }) {
 
   return (
     <>
-      <Input
+      <FormInput
         placeholder="Cari catatan aktif"
         value={searchTerm}
         onChange={handleSearchChange}
