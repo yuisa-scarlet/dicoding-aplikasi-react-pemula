@@ -1,6 +1,6 @@
 import "./NoteList.css";
 import NoteItem from "./NoteItem";
-import FormInput from "../ui/input";
+import FormInput from "../ui/input/Input";
 import { useState } from "react";
 
 export function NoteArchiveList({ notes, onDelete, onArchive }) {
