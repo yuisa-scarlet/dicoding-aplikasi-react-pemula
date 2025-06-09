@@ -1,6 +1,6 @@
 import "./NoteItem.css";
 import { showFormattedDate } from "../../utils/format-date";
-import Button from "../ui/button";
+import Button from "../ui/button/Button";
 
 export default function NoteItem({ note, onClick, onDelete, onArchive }) {
   const handleClick = () => {
